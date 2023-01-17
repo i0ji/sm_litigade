@@ -1,0 +1,35 @@
+{
+  "name": "litigade",
+  "version": "1.0.0",
+  "description": "Litigade portfolio model",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development",
+    "start": "webpack-dev-server --hot --mode development"
+  },
+  "keywords": [
+    "Litigade",
+    "webpack",
+    "model",
+    "portfolio"
+  ],
+  "author": "Ioann <ioji@inbox.ru>",
+  "license": "ISC",
+  "devDependencies": {
+    "copy-webpack-plugin": "^11.0.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.7.3",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.7.2",
+    "sass": "^1.57.1",
+    "sass-loader": "^13.2.0",
+    "webpack-dev-server": "^4.11.1"
+  }
+}
