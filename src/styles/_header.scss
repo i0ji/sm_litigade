@@ -11,13 +11,15 @@ header {
       width: 100%;
       height: 102px;
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      justify-content: space-evenly;
 
-      .common-title-m {
+      &-title {
         display: flex;
         justify-content: center;
-        width: 35%;
+        width: 30%;
+
+
       }
 
       &-ul {
@@ -25,6 +27,7 @@ header {
         justify-content: right;
         padding-right: 10px;
         width: 40%;
+        min-width: 392px;
 
         ul li {
           margin: 0 13px;
@@ -40,8 +43,11 @@ header {
         }
       }
 
-      &-burger {
-        width: 5.5%;
+      &-buttons {
+        width: 15%;
+        display: flex;
+        justify-content: space-between;
+        padding-right: 10px;
       }
 
     }
@@ -53,6 +59,10 @@ header {
       align-items: center;
       height: 721px;
 
+
+      div {
+        margin: 0 13px;
+      }
 
       // ---------- HEADER-INFO-BLOCK
       .header__info-block {
@@ -76,7 +86,7 @@ header {
       }
 
       .header__buttons-block {
-      display: flex;
+        display: flex;
         width: 100%;
         flex-direction: row;
         justify-content: left;
@@ -107,15 +117,169 @@ header {
           border: 1px solid $brand-brown;
           margin: 0 4px;
         }
-
       }
+
 
       // ---------- HEADER-BOOKING-FORM
       .header__booking-form {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
         width: 23%;
+        min-width: 300px;
+        height: 619px;
+        background-color: #ffffff;
+        border-radius: 10px;
+
+        .booking-form__input-block {
+
+          .booking-title {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.2px;
+            color: $brand-dark-blue;
+            margin-bottom: 4px;
+          }
+
+          label {
+            position: relative;
+
+            input {
+              width: 245px;
+              height: 50px;
+              text-indent: 21px;
+              border-radius: 5px;
+              outline: none;
+              border: 1px solid #BDBDBD;
+            }
+
+            button {
+              position: absolute;
+              right: 12px;
+              top: 7px;
+            }
+          }
+        }
+
+        .booking-form__input-button {
+          width: 248px;
+          height: 58px;
+          border-radius: 5px;
+          color: #ffffff;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 28px;
+        }
+      }
+    }
+  }
+}
+
+
+// ---------- HEADER-MEDIA ----------
+@media (min-width: 799.98px) {
+  header .content .header__navbar .navbar__title-adaptive-buttons {
+    display: none;
+  }
+}
+
+@media (max-width: 1070px) {
+  header {
+    .content {
+      .header__navbar {
+        .common-title-m {
+          width: 35vw;
+        }
       }
 
+      .header__booking-block {
 
+        .header__info-block {
+          text-align: center;
+          align-items: center;
+        }
+
+        .header__buttons-block {
+          justify-content: space-evenly;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  header {
+    .content {
+      .header__navbar-buttons {
+        justify-content: center;
+        min-width: 113px;
+      }
+
+      .header__navbar-title {
+        text-align: center;
+      }
+
+      .header__navbar-ul {
+        width: 20vw;
+      }
+      .header__navbar-buttons {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  header {
+
+    .content {
+
+      .header__navbar {
+        flex-direction: column;
+        background-color: #ffffff;
+        width: 100%;
+        height: 414px;
+
+        &-title {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+
+          .navbar__title-adaptive-buttons {
+            width: 30%;
+            justify-content: space-evenly;
+          }
+        }
+
+
+        &-ul {
+          display: flex;
+          justify-content: center;
+
+          ul li {
+            display: block;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 45px;
+            text-align: center;
+            letter-spacing: 0.2px;
+            color: #737373;
+            }
+        }
+
+        ul {
+          li {
+            margin: 15px;
+          }
+        }
+
+        .header__navbar_buttons {
+        }
+      }
     }
   }
 }

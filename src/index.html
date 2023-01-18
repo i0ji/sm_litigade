@@ -21,9 +21,16 @@
         <!-- ---------- HEADER-NAVBAR -->
         <div class="header__navbar">
 
+            <div class="header__navbar-title">
             <p class="common-title-m">
                 <a href="#">Litigade</a>
             </p>
+                <div class="navbar__title-adaptive-buttons">
+                    <button class="navbar__search-button"><img src="img/header/search.png" alt="Search"></button>
+                    <button class="navbar__card-button"><img src="img/header/card.png" alt="Card"></button>
+                    <button class="navbar__burger-menu"><img src="img/header/burger.png" alt="Menu"></button>
+                </div>
+            </div>
 
             <div class="header__navbar-ul">
 
@@ -34,12 +41,13 @@
                     <li class="navbar__item">Contact</li>
                 </ul>
 
-                <button class="navbar__search-button"><img src="img/header/search.png" alt="Search"></button>
-                <button class="navbar__card-button"><img src="img/header/card.png" alt="Card"></button>
-
             </div>
 
-            <div class="header__navbar-burger">
+            <div class="header__navbar-buttons">
+                <div>
+                <button class="navbar__search-button"><img src="img/header/search.png" alt="Search"></button>
+                <button class="navbar__card-button"><img src="img/header/card.png" alt="Card"></button>
+                </div>
                 <button class="navbar__burger-menu"><img src="img/header/burger.png" alt="Menu"></button>
             </div>
 
@@ -63,7 +71,42 @@
 
             </div>
 
-            <div class="header__booking-form"></div>
+            <div class="header__booking-form">
+
+                <p class="common-title-m">Book Appointment</p>
+
+                <div class="booking-form__input-block">
+                <p class="booking-title">Name *</p>
+                <label>
+                    <input type="text" name="" placeholder="Full name">
+                </label>
+                </div>
+                <div class="booking-form__input-block">
+                    <p class="booking-title">Email *</p>
+                    <label>
+                        <input type="text" placeholder="example@gmail.com" name="">
+                    </label>
+                </div>
+                <div class="booking-form__input-block">
+                    <p class="booking-title">Department *</p>
+                    <label>
+                        <input type="text" placeholder="Please Select" name="" >
+                        <button><img src="img/header/vector.png" alt=""></button>
+                    </label>
+                </div>
+                <div class="booking-form__input-block">
+                    <p class="booking-title">Time *</p>
+                    <label>
+                        <input type="text" placeholder="4:00 Available" name="">
+                        <button><img src="img/header/vector.png" alt=""></button>
+                    </label>
+                </div>
+
+                <button class="booking-form__input-button bg-navy">
+                    Book Appointment
+                </button>
+
+            </div>
 
         </div>
 
