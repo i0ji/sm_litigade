@@ -1,0 +1,19 @@
+// ---------- HEADER ----------
+header {
+  background-color: #d8dcdf;
+  height: 823px;
+
+  .content {
+    background-image: url('../img/header/cover.png');
+    height: 100%;
+
+    .header__navbar {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+  }
+
+
+}
