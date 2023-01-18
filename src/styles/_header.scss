@@ -1,19 +1,121 @@
 // ---------- HEADER ----------
 header {
   background-color: #d8dcdf;
-  height: 823px;
 
   .content {
     background-image: url('../img/header/cover.png');
     height: 100%;
 
+    // ---------- HEADER-NAVBAR
     .header__navbar {
       width: 100%;
+      height: 102px;
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-between;
       align-items: center;
+
+      .common-title-m {
+        display: flex;
+        justify-content: center;
+        width: 35%;
+      }
+
+      &-ul {
+        display: flex;
+        justify-content: right;
+        padding-right: 10px;
+        width: 40%;
+
+        ul li {
+          margin: 0 13px;
+          display: inline-block;
+          font-family: 'Open Sans', sans-serif;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 24px;
+          text-align: center;
+          letter-spacing: 0.2px;
+          color: #737373;
+        }
+      }
+
+      &-burger {
+        width: 5.5%;
+      }
+
+    }
+
+    // ---------- HEADER-BOOKING-BLOCK
+    .header__booking-block {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 721px;
+
+
+      // ---------- HEADER-INFO-BLOCK
+      .header__info-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 49%;
+        height: 43%;
+
+        p {
+          font-family: Montserrat, sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 30px;
+          letter-spacing: 0.2px;
+          color: #737373;
+          width: 70%;
+          text-align: left;
+        }
+      }
+
+      .header__buttons-block {
+      display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: left;
+
+        .header__quote-button {
+          width: 182px;
+          height: 48px;
+          background: #784F33;
+          border-radius: 37px;
+          color: #ffffff;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 28px;
+          margin: 0 4px;
+        }
+
+        .header__learn-button {
+          width: 155px;
+          height: 48px;
+          border-radius: 37px;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 28px;
+          text-align: center;
+          letter-spacing: 0.2px;
+          color: $brand-brown;
+          border: 1px solid $brand-brown;
+          margin: 0 4px;
+        }
+
+      }
+
+      // ---------- HEADER-BOOKING-FORM
+      .header__booking-form {
+        width: 23%;
+      }
+
+
     }
   }
-
-
 }
