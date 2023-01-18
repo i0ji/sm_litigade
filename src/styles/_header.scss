@@ -25,7 +25,6 @@ header {
       &-ul {
         display: flex;
         justify-content: right;
-        padding-right: 10px;
         width: 40%;
         min-width: 392px;
 
@@ -72,7 +71,7 @@ header {
         width: 49%;
         height: 43%;
 
-        p {
+        .span-title {
           font-family: Montserrat, sans-serif;
           font-style: normal;
           font-weight: 500;
@@ -154,6 +153,7 @@ header {
               border-radius: 5px;
               outline: none;
               border: 1px solid #BDBDBD;
+              background-color: #F9F9F9;
             }
 
             button {
@@ -213,6 +213,12 @@ header {
 @media (max-width: 800px) {
   header {
     .content {
+      background-position: top center;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+
+
       .header__navbar-buttons {
         justify-content: center;
         min-width: 113px;
@@ -278,6 +284,64 @@ header {
         }
 
         .header__navbar_buttons {
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  header {
+    .content {
+      .header__booking-block {
+        width: auto;
+        margin: 0 auto ;
+        height: 1269px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .header__info-block {
+          width: 100%;
+          margin-bottom: 30px;
+
+          .common-title-l {
+            max-width: 320px;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 50px;
+            text-align: center;
+            letter-spacing: 0.2px;
+          }
+
+          .span-title {
+            text-align: center;
+            width: 78%;
+          }
+
+          .header__buttons-block {
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            button {
+              margin: 10px;
+            }
+          }
+
+        }
+
+        .header__booking-form {
+          width: 320px;
+          align-items: center;
+
+          .booking-form__input-block {
+            label {
+              input {
+                width: 245px;
+              }
+            }
+          }
         }
       }
     }
