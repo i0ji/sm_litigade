@@ -1,6 +1,7 @@
 // ---------- FEEDBACK-BLOCK ----------
 .feedback-block {
-  // ---------- FEEDBACK-REVIEWS
+
+  // ---------- FEEDBACK-REVIEW-LIST
   &__review-list {
     display: flex;
     flex-flow: row wrap;
@@ -71,5 +72,4 @@
 
     }
   }
-
 }

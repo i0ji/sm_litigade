@@ -351,6 +351,7 @@ header .content .header__booking-block .header__booking-form .booking-form__inpu
   height: 385px;
   border-radius: 10px;
   background-color: #F6E4D7;
+  box-shadow: 15px 15px 5px #fafafa;
 }
 .advice-block .advice-block__item-list .advice-item__top-line {
   height: 132px;
@@ -504,6 +505,41 @@ header .content .header__booking-block .header__booking-form .booking-form__inpu
   line-height: 24px;
   letter-spacing: 0.2px;
   color: #252B42;
+}
+
+.attorneys-block .attorneys-block__person-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+.attorneys-block .attorneys-block__person-list .attorneys-block__profile {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 328px;
+  height: 373px;
+  border: 1px solid #EEEEEE;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #fafafa;
+  margin: 30px;
+}
+.attorneys-block .attorneys-block__person-list .attorneys-block__profile .profile__info {
+  height: 142px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.attorneys-block .attorneys-block__person-list .attorneys-block__profile .profile__info .common-text.profile-name {
+  font-size: 16px;
+  letter-spacing: 0.1px;
+}
+.attorneys-block .attorneys-block__person-list .attorneys-block__profile .profile__info .common-text.profile-position {
+  font-family: "Open Sans", sans-serif;
+  color: #737373;
+}
+.attorneys-block .attorneys-block__person-list .attorneys-block__profile .profile__info .profile__social-buttons img {
+  margin: 0 7px;
 }
 
 section, .content {
