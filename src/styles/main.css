@@ -481,7 +481,7 @@ header .content .header__booking-block .header__booking-form .booking-form__inpu
   display: flex;
   align-items: center;
   height: 100%;
-  width: 100px;
+  width: 70px;
 }
 .feedback-block__review-list .review-item__photo img {
   width: 50px;
