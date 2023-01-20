@@ -1,6 +1,7 @@
 // ---------- ABOUT-BLOCK ----------
 .about-block {
   background: linear-gradient(0deg, $brand-navy 57%, #FAFAFA 57%);
+  border-radius: 15px;
   height: 759px;
 
   // ---------- ABOUT-TITLE ----------
@@ -20,8 +21,7 @@
       height: 442px;
       width: auto;
     }
-
-    .play-button {
+    button {
       position: absolute;
     }
   }

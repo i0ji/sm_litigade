@@ -415,6 +415,7 @@ header .content .header__booking-block .header__booking-form .booking-form__inpu
 }
 .about-block {
   background: linear-gradient(0deg, #295C7A 57%, #FAFAFA 57%);
+  border-radius: 15px;
   height: 759px;
 }
 .about-block .section-title {
@@ -431,7 +432,7 @@ header .content .header__booking-block .header__booking-form .booking-form__inpu
   height: 442px;
   width: auto;
 }
-.about-block__video .play-button {
+.about-block__video button {
   position: absolute;
 }
 
@@ -447,6 +448,64 @@ header .content .header__booking-block .header__booking-form .booking-form__inpu
     width: 350px;
   }
 }
+.feedback-block__review-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+.feedback-block__review-list .review-item {
+  width: 327px;
+  height: 244px;
+  border: 1px solid #DEDEDE;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #fafafa;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+  padding: 30px 35px;
+  margin: 30px;
+}
+.feedback-block__review-list .review-item .common-text {
+  width: 227px;
+  font-family: "Open Sans", sans-serif;
+  color: #737373;
+}
+.feedback-block__review-list .review-item__author {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: start;
+}
+.feedback-block__review-list .review-item__photo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100px;
+}
+.feedback-block__review-list .review-item__photo img {
+  width: 50px;
+  height: 50px;
+}
+.feedback-block__review-list .review-item__name p {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #D0A144;
+}
+.feedback-block__review-list .review-item__speciality p {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #252B42;
+}
+
 section, .content {
   max-width: 1440px;
   margin-top: 80px;
