@@ -2,6 +2,8 @@
 header {
   background-color: #d8dcdf;
   margin-bottom: 80px;
+  justify-content: center;
+  display: flex;
 
   .content {
     background-image: url('../img/header/cover.png');
@@ -220,7 +222,6 @@ header {
       background-repeat: no-repeat;
 
 
-
       .header__navbar-buttons {
         justify-content: center;
         min-width: 113px;
@@ -233,6 +234,7 @@ header {
       .header__navbar-ul {
         width: 20vw;
       }
+
       .header__navbar-buttons {
         display: none;
       }
@@ -253,7 +255,7 @@ header {
 
         &-title {
           display: flex;
-          justify-content: space-between;
+          justify-content: space-evenly;
           width: 100%;
 
           .navbar__title-adaptive-buttons {
@@ -276,7 +278,7 @@ header {
             text-align: center;
             letter-spacing: 0.2px;
             color: #737373;
-            }
+          }
         }
 
         ul {
@@ -297,7 +299,7 @@ header {
     .content {
       .header__booking-block {
         width: auto;
-        margin: 0 auto ;
+        margin: 0 auto;
         height: 1269px;
         display: flex;
         flex-direction: column;

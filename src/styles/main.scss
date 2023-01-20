@@ -4,24 +4,27 @@
 @import 'colors';
 @import 'header';
 @import 'advice';
+@import 'about';
 
 // ---------- COMMON-SETTINGS ----------
 section, .content
 {
   max-width: 1440px;
-  margin: 40px auto ;
+  margin-top: 80px;
+  margin-bottom: 40px;
 }
 
 // ---------- SECTION-MEDIA
 @media (min-width: 575.98px){
   section {
     max-width: 540px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0;
   }
 }
 @media (min-width: 767.98px){
-  sec {
+  section {
     max-width: 720px;
   }
 }
@@ -84,8 +87,6 @@ a:visited {
   line-height: 32px;
   color: $brand-dark-blue;
 }
-
-
 
 .common-title-text {
   font-family: 'Open Sans', sans-serif;

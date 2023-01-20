@@ -1,0 +1,48 @@
+// ---------- ABOUT-BLOCK ----------
+.about-block {
+  background: linear-gradient(0deg, $brand-navy 57%, #FAFAFA 57%);
+  height: 759px;
+
+  // ---------- ABOUT-TITLE ----------
+  .section-title {
+    padding: 80px 0 50px 0;
+    margin-bottom: 0;
+  }
+
+  // ---------- ABOUT-VIDEO ----------
+  &__video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .cover {
+      height: 442px;
+      width: auto;
+    }
+
+    .play-button {
+      position: absolute;
+    }
+  }
+}
+
+
+// ---------- ABOUT-MEDIA ----------
+@media (max-width: 991.98px) {
+  .about-block__video {
+    .cover {
+      object-fit: cover;
+      width: 400px;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .about-block__video {
+    .cover {
+      object-fit: cover;
+      width: 350px;
+    }
+  }
+}

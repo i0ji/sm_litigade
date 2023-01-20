@@ -1,11 +1,9 @@
 // ---------- ADVICE-BLOCK ----------
 .advice-block {
-  margin-bottom: 100px;
 
-  .common-title-text {
-    width: 431px;
-  }
+  // ---------- ADVICE-TITLE
 
+  // ---------- ADVICE-ITEM-LIST
   .advice-block__item-list {
     display: flex;
     flex-flow: row wrap;
@@ -86,6 +84,8 @@
   }
 }
 
+
+// ---------- ADVICE-BLOCK-MEDIA ----------
 @media (max-width: 1200px) {
   .advice-block {
     &__item-list {
