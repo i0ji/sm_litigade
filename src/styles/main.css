@@ -562,7 +562,7 @@ header .content .header__booking-block .header__booking-form .booking-form__inpu
 }
 .appointment-block__input-form div button {
   position: absolute;
-  top: 11px;
+  top: 22px;
   right: 10px;
 }
 .appointment-block__input-form div .input-form__name,
