@@ -7,6 +7,8 @@
 @import 'about';
 @import 'feedback';
 @import 'attorneys';
+@import 'appointment';
+@import 'request';
 
 // ---------- COMMON-SETTINGS ----------
 section, .content
@@ -90,6 +92,15 @@ a:visited {
   color: $brand-dark-blue;
 }
 
+.common-title-xs {
+  font-family: 'Martel', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: $brand-dark-blue;
+}
+
 .common-title-text {
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
@@ -118,6 +129,12 @@ button {
   border: none;
   background-color: transparent;
   font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+  border-radius: 5px;
 }
 
 button:hover {
@@ -128,4 +145,9 @@ button:hover {
 button:active {
   transform: scale(0.97);
   opacity: 0.6;
+}
+
+input {
+  text-indent: 21px;
+  outline: none;
 }

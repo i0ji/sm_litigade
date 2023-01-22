@@ -1,3 +1,6 @@
+/*!***************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/main.scss ***!
+  \***************************************************************************************************************/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -48,15 +51,15 @@ table {
 
 @font-face {
   font-family: "Martel";
-  src: url("../fonts/Martel-Regular.ttf");
+  src: url(ea38cb6d59a9f138b187.ttf);
 }
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/OpenSans-Regular.ttf");
+  src: url(a702d1ba055f949057ac.ttf);
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("../fonts/Montserrat-Regular.ttf");
+  src: url(1dc601c0c5cdc22d5580.ttf);
 }
 * {
   font-family: Martel, sans-serif;
@@ -81,7 +84,7 @@ header {
   display: flex;
 }
 header .content {
-  background-image: url("../img/header/cover.png");
+  background-image: url(830182091a8bd6fad868.png);
   height: 100%;
   margin-top: 0;
 }
@@ -542,7 +545,7 @@ header .content .header__booking-block .header__booking-form .booking-form__inpu
 
 .appointment-block {
   padding: 50px;
-  background-image: url("../img/appointment/cover.png");
+  background-image: url(b14ca55f9c0600e845dd.png);
   border-radius: 15px;
   margin-bottom: 0;
   height: 575px;
@@ -738,5 +741,3 @@ input {
   text-indent: 21px;
   outline: none;
 }
-
-/*# sourceMappingURL=main.css.map */

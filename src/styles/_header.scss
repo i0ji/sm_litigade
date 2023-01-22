@@ -153,9 +153,7 @@ header {
             input {
               width: 245px;
               height: 50px;
-              text-indent: 21px;
               border-radius: 5px;
-              outline: none;
               border: 1px solid #BDBDBD;
               background-color: #F9F9F9;
             }
@@ -163,7 +161,7 @@ header {
             button {
               position: absolute;
               right: 12px;
-              top: 7px;
+              top: 1px;
             }
           }
         }
