@@ -2,7 +2,7 @@
   "name": "litigade",
   "version": "1.0.0",
   "repository": {
-    "url": "git+https://https://github.com/HardTurn/litigade.git"
+    "url": "git+https://github.com/HardTurn/litigade.git"
   },
   "description": "Litigade portfolio model",
   "main": "index.js",
@@ -10,7 +10,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
     "dev": "webpack --mode development",
-    "start": "webpack-dev-server --hot --mode development"
+    "start": "webpack-dev-server --hot --mode development",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [
     "Litigade",
