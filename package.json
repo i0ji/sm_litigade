@@ -2,7 +2,7 @@
   "name": "litigade",
   "version": "1.0.0",
   "repository": {
-    "url": "git+https://https://github.com/HardTurn/litigade"
+    "url": "git+https://https://github.com/HardTurn/litigade.git"
   },
   "description": "Litigade portfolio model",
   "main": "index.js",
