@@ -546,8 +546,88 @@ header .content .header__booking-block .header__booking-form .booking-form__inpu
   border-radius: 15px;
   margin-bottom: 0;
   display: flex;
+  flex-direction: column;
+  height: auto;
+}
+.appointment-block__input-form {
+  width: 598px;
+  display: inherit;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.appointment-block__input-form div {
+  position: relative;
+}
+.appointment-block__input-form div button {
+  position: absolute;
+  top: 11px;
+  right: 10px;
+}
+.appointment-block__input-form div .input-form__name,
+.appointment-block__input-form div .input-form__email,
+.appointment-block__input-form div .input-form__select,
+.appointment-block__input-form div .input-form__time {
+  margin: 10px 0;
+  width: 285px;
+  height: 50px;
+  border: 1px solid #BDBDBD;
+  outline: none;
+  border-radius: 5px;
+  background-color: #F9F9F9;
+}
+.appointment-block__input-form .input-form__message label textarea {
+  margin-top: 10px;
+  resize: none;
+  padding: 10px;
+  height: 140px;
+  width: 578px;
+  background-color: #F9F9F9;
+  border: 1px solid #BDBDBD;
+  border-radius: 5px;
+  outline: none;
+}
+.appointment-block__button-block button {
+  width: 215px;
+  height: 58px;
+  border-radius: 5px;
 }
 
+@media (max-width: 991.98px) {
+  .appointment-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .appointment-block__title {
+    text-align: center;
+  }
+  .appointment-block__input-form {
+    padding: 40px;
+    max-width: 100%;
+  }
+}
+@media (max-width: 767.98px) {
+  .appointment-block__input-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0 0 40px 0;
+  }
+  .appointment-block__input-form .input-form__message {
+    display: flex;
+    justify-content: center;
+  }
+  .appointment-block__input-form .input-form__message label {
+    text-align: center;
+  }
+  .appointment-block__input-form .input-form__message label textarea {
+    width: 271px;
+  }
+}
 .request-block {
   margin-top: 40px;
 }
