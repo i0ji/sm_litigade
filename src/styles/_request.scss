@@ -1,10 +1,41 @@
 // ---------- REQUEST-BLOCK ----------
 .request-block {
   margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__title {
+    width: 400px;
+
+  }
 
   button {
     width: 215px;
     height: 58px;
     border-radius: 5px;
+  }
+}
+
+@media (max-width: 630px) {
+  .request-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__title {
+
+      display: flex;
+      justify-content: left;
+      flex-direction: column;
+      text-align: left;
+      width: 221px;
+      margin: 30px;
+
+      h3, p {
+        width: 200px;
+      }
+
+    }
   }
 }

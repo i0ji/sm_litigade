@@ -630,6 +630,12 @@ header .content .header__booking-block .header__booking-form .booking-form__inpu
 }
 .request-block {
   margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.request-block__title {
+  width: 400px;
 }
 .request-block button {
   width: 215px;
@@ -637,6 +643,24 @@ header .content .header__booking-block .header__booking-form .booking-form__inpu
   border-radius: 5px;
 }
 
+@media (max-width: 630px) {
+  .request-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .request-block__title {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    text-align: left;
+    width: 221px;
+    margin: 30px;
+  }
+  .request-block__title h3, .request-block__title p {
+    width: 200px;
+  }
+}
 section, .content {
   max-width: 1440px;
   margin-top: 80px;
