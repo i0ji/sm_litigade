@@ -1,9 +1,10 @@
 // ---------- FOOTER ----------
 .footer {
 
-
   // ---------- FOOTER-TOP-LINE
   &__top-line {
+    position: relative;
+
     .content {
       display: flex;
       align-items: center;
@@ -26,16 +27,119 @@
         }
       }
 
+      hr {
+        position: absolute;
+        border: 1px solid #364067;
+        bottom: 1px;
+        width: 1440px;
+      }
     }
+
+
   }
 
   // ---------- FOOTER-MIDDLE-LINE
   &__middle-line {
     .content {
+      height: 310px;
       margin-top: 0;
       margin-bottom: 0;
+      display: flex;
+      justify-content: space-between;
+
+
+      ul, li {
+        font-family: 'Open Sans', sans-serif;
+        color: #BDBDBD;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        margin: 20px 0;
+      }
+
+      .footer__info-block {
+        display: flex;
+        width: 60%;
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+
+
+
+        .common-title-xs {
+          font-family: 'Martel', sans-serif;
+          color: #ffffff;
+        }
+      }
+
+
+
+
+
+      .footer__subscribe-form {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        div {
+          display: flex;
+          justify-content: start;
+          width: 420px;
+
+          .common-title-xs {
+            font-family: 'Martel', sans-serif;
+            color: #ffffff;
+          }
+        }
+
+          label {
+            position: relative;
+            height: 18%;
+
+            input.subscribe-area {
+              position: absolute;
+              right: 0;
+              background: #F9F9F9;
+              border: 1px solid #E6E6E6;
+              border-radius: 5px 0 0 5px;
+              width: 204px;
+              height: 54px;
+            }
+
+            .subscribe-button {
+              position: absolute;
+              left: 0;
+              background: #D0A144;
+              border: 1px solid #E6E6E6;
+              border-radius: 0 5px 5px 0;
+              width: 117px;
+              height: 58px;
+            }
+
+            .subscribe-button:hover,
+            .subscribe-button:active {
+              transform: none;
+            }
+
+          }
+
+        .footer__lorem-text {
+          color: #BDBDBD;
+          font-family: 'Montserrat', sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 28px;
+          letter-spacing: 0.2px;
+        }
+        }
+      }
     }
-  }
+
 
   // ---------- FOOTER-BOTTOM-LINE
   &__bottom-line {
