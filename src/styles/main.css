@@ -684,14 +684,7 @@ header .content .header__booking-block .header__booking-form .booking-form__inpu
 .footer__top-line .content .footer__social-buttons img {
   margin-right: 20px;
 }
-.footer__top-line .content hr {
-  position: absolute;
-  border: 1px solid #364067;
-  bottom: 1px;
-  width: 1440px;
-}
 .footer__middle-line .content {
-  height: 310px;
   margin-top: 0;
   margin-bottom: 0;
   display: flex;
@@ -706,41 +699,48 @@ header .content .header__booking-block .header__booking-form .booking-form__inpu
   line-height: 24px;
   letter-spacing: 0.2px;
   margin: 20px 0;
+  min-width: 140px;
 }
 .footer__middle-line .content .footer__info-block {
   display: flex;
-  width: 60%;
-  height: 100%;
-  justify-content: space-between;
+  width: 70%;
   align-items: center;
+  margin-bottom: 35px;
+}
+.footer__middle-line .content .footer__info-block .info-block__company,
+.footer__middle-line .content .footer__info-block .info-block__features,
+.footer__middle-line .content .footer__info-block .info-block__legal,
+.footer__middle-line .content .footer__info-block .info-block__resources {
+  min-width: 140px;
+  width: 25%;
 }
 .footer__middle-line .content .footer__info-block .common-title-xs {
   font-family: "Martel", sans-serif;
   color: #ffffff;
 }
 .footer__middle-line .content .footer__subscribe-form {
-  width: 40%;
+  width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 .footer__middle-line .content .footer__subscribe-form div {
   display: flex;
   justify-content: start;
-  width: 420px;
+  width: 100%;
 }
 .footer__middle-line .content .footer__subscribe-form div .common-title-xs {
   font-family: "Martel", sans-serif;
   color: #ffffff;
+  margin-bottom: 10px;
 }
 .footer__middle-line .content .footer__subscribe-form label {
   position: relative;
-  height: 18%;
+  height: 60px;
 }
 .footer__middle-line .content .footer__subscribe-form label input.subscribe-area {
   position: absolute;
-  right: 0;
+  left: 0;
   background: #F9F9F9;
   border: 1px solid #E6E6E6;
   border-radius: 5px 0 0 5px;
@@ -749,7 +749,7 @@ header .content .header__booking-block .header__booking-form .booking-form__inpu
 }
 .footer__middle-line .content .footer__subscribe-form label .subscribe-button {
   position: absolute;
-  left: 0;
+  right: 0;
   background: #D0A144;
   border: 1px solid #E6E6E6;
   border-radius: 0 5px 5px 0;
@@ -786,6 +786,26 @@ header .content .header__booking-block .header__booking-form .booking-form__inpu
     padding: 0 15px;
   }
 }
+@media (max-width: 1380px) {
+  .footer__middle-line .content .footer__info-block {
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
+  .footer__middle-line .content .footer__info-block ul, .footer__middle-line .content .footer__info-block li {
+    min-width: 100px;
+  }
+}
+@media (max-width: 1030px) {
+  .footer__middle-line .content {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 @media (max-width: 700px) {
   .footer__bottom-line .content {
     display: flex;
@@ -801,7 +821,15 @@ header .content .header__booking-block .header__booking-form .booking-form__inpu
     justify-content: space-evenly;
     height: 212px;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
+  }
+  .footer__top-line .content .footer__social-buttons img {
+    margin: 10px;
+  }
+  .footer__middle-line .content .footer__info-block ul,
+  .footer__middle-line .content .footer__info-block li {
+    min-width: 100px;
+    text-align: center;
   }
 }
 section, .content {
