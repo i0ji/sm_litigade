@@ -9,16 +9,16 @@
 @import 'attorneys';
 @import 'appointment';
 @import 'request';
+@import 'footer';
 
 // ---------- COMMON-SETTINGS ----------
 section, .content
 {
   max-width: 1440px;
-  margin-top: 80px;
-  margin-bottom: 40px;
+  margin: 80px auto 40px auto;
 }
 
-// ---------- SECTION-MEDIA
+// ---------- SECTION/CONTENT-MEDIA
 @media (min-width: 575.98px){
   section {
     max-width: 540px;
