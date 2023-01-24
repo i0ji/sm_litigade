@@ -15,6 +15,7 @@
 
       .footer__title {
 
+
         .common-title-s {
           font-family: 'Martel', sans-serif;
           color: #ffffff;
@@ -54,13 +55,15 @@
       .footer__info-block {
         display: flex;
         align-items: center;
+        width: 80%;
+        justify-content: space-between;
         margin-bottom: 35px;
+
 
         .info-block__company,
         .info-block__features,
         .info-block__legal,
         .info-block__resources {
-          margin: 0 58px;
           min-width: 140px;
           width: 25%;
         }
