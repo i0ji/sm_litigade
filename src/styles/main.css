@@ -703,7 +703,6 @@ header .content .header__booking-block .header__booking-form .booking-form__inpu
 }
 .footer__middle-line .content .footer__info-block {
   display: flex;
-  width: 70%;
   align-items: center;
   margin-bottom: 35px;
 }
@@ -711,6 +710,7 @@ header .content .header__booking-block .header__booking-form .booking-form__inpu
 .footer__middle-line .content .footer__info-block .info-block__features,
 .footer__middle-line .content .footer__info-block .info-block__legal,
 .footer__middle-line .content .footer__info-block .info-block__resources {
+  margin: 0 58px;
   min-width: 140px;
   width: 25%;
 }
@@ -719,10 +719,10 @@ header .content .header__booking-block .header__booking-form .booking-form__inpu
   color: #ffffff;
 }
 .footer__middle-line .content .footer__subscribe-form {
-  width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 0 10px;
 }
 .footer__middle-line .content .footer__subscribe-form div {
   display: flex;
@@ -737,10 +737,9 @@ header .content .header__booking-block .header__booking-form .booking-form__inpu
 .footer__middle-line .content .footer__subscribe-form label {
   position: relative;
   height: 60px;
+  width: 326px;
 }
 .footer__middle-line .content .footer__subscribe-form label input.subscribe-area {
-  position: absolute;
-  left: 0;
   background: #F9F9F9;
   border: 1px solid #E6E6E6;
   border-radius: 5px 0 0 5px;
@@ -803,6 +802,9 @@ header .content .header__booking-block .header__booking-form .booking-form__inpu
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+  }
+  .footer__middle-line .content .footer__subscribe-form {
     align-items: center;
   }
 }
