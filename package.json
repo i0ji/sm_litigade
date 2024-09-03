@@ -9,6 +9,7 @@
   "scripts": {
     "build": "webpack --mode production",
     "dev": "webpack --mode development",
+    "prod": "webpack --mode production",
     "start": "webpack-dev-server --hot --mode development",
     "deploy": "gh-pages -d dist"
   },
