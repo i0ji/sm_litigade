@@ -1,2 +1,2 @@
 import "../styles/main.scss";
-console.log("hello-test");
+console.log("26.10.24");
