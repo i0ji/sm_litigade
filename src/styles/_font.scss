@@ -1,7 +1,7 @@
 // ---------- FONT-SETTINGS ----------
 @font-face {
   font-family: 'Martel';
-  src: url('../fonts/Martel-Regular.ttf')
+  src: url('../fonts/Martel-Regular.ttf');
 }
 
 @font-face {
@@ -14,7 +14,6 @@
   src: url('../fonts/Montserrat-Regular.ttf');
 }
 
-
 * {
-  font-family: Martel, sans-serif
+  font-family: Martel, sans-serif;
 }

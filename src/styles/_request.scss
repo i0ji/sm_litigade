@@ -26,7 +26,6 @@
     justify-content: center;
 
     &__title {
-
       display: flex;
       justify-content: left;
       flex-direction: column;
@@ -34,10 +33,10 @@
       width: 221px;
       margin: 30px;
 
-      h3, p {
+      h3,
+      p {
         width: 200px;
       }
-
     }
   }
 }

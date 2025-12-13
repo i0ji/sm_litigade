@@ -8,8 +8,6 @@
   flex-direction: column;
   height: auto;
 
-
-
   // ---------- APPOINTMENT-INPUT-FORM
   &__input-form {
     width: 598px;
@@ -18,7 +16,6 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 40px;
-
 
     div {
       position: relative;
@@ -36,10 +33,10 @@
         margin: 10px 0;
         width: 285px;
         height: 50px;
-        border: 1px solid #BDBDBD;
+        border: 1px solid #bdbdbd;
         outline: none;
         border-radius: 5px;
-        background-color: #F9F9F9;
+        background-color: #f9f9f9;
       }
     }
 
@@ -51,8 +48,8 @@
           padding: 10px;
           height: 140px;
           width: 578px;
-          background-color: #F9F9F9;
-          border: 1px solid #BDBDBD;
+          background-color: #f9f9f9;
+          border: 1px solid #bdbdbd;
           border-radius: 5px;
           outline: none;
         }
@@ -90,7 +87,6 @@
 
 @media (max-width: 767.98px) {
   .appointment-block {
-
     &__input-form {
       width: 100%;
       display: flex;

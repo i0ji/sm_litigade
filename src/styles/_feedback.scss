@@ -1,6 +1,7 @@
+@use 'colors' as *;
+
 // ---------- FEEDBACK-BLOCK ----------
 .feedback-block {
-
   // ---------- FEEDBACK-REVIEW-LIST
   &__review-list {
     display: flex;
@@ -10,7 +11,7 @@
     .review-item {
       width: 327px;
       height: 244px;
-      border: 1px solid #DEDEDE;
+      border: 1px solid #dedede;
       border-radius: 5px;
       box-shadow: 5px 5px 5px #fafafa;
       display: flex;
@@ -20,10 +21,9 @@
       padding: 30px 28px;
       margin: 30px;
 
-
       .common-text {
         width: 227px;
-        font-family: "Open Sans", sans-serif;
+        font-family: 'Open Sans', sans-serif;
         color: #737373;
       }
 
@@ -69,7 +69,6 @@
           color: $brand-dark-blue;
         }
       }
-
     }
   }
 }

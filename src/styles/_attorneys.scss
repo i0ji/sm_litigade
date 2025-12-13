@@ -1,11 +1,9 @@
 // ---------- ATTORNEYS ----------
 .attorneys-block {
-
   .attorneys-block__person-list {
-display: flex;
+    display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-
 
     .attorneys-block__profile {
       display: flex;
@@ -13,7 +11,7 @@ display: flex;
       flex-direction: column;
       width: 328px;
       height: 373px;
-      border: 1px solid #EEEEEE;
+      border: 1px solid #eeeeee;
       border-radius: 5px;
       box-shadow: 5px 5px 5px #fafafa;
       margin: 30px;
@@ -31,12 +29,11 @@ display: flex;
         }
 
         .common-text.profile-position {
-          font-family: "Open Sans", sans-serif;
+          font-family: 'Open Sans', sans-serif;
           color: #737373;
         }
 
         .profile__social-buttons {
-
           img {
             margin: 0 7px;
           }

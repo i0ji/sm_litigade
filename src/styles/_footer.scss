@@ -1,6 +1,5 @@
 // ---------- FOOTER ----------
 .footer {
-
   // ---------- FOOTER-TOP-LINE
   &__top-line {
     position: relative;
@@ -14,8 +13,6 @@
       margin-bottom: 0;
 
       .footer__title {
-
-
         .common-title-s {
           font-family: 'Martel', sans-serif;
           color: #ffffff;
@@ -28,8 +25,6 @@
         }
       }
     }
-
-
   }
 
   // ---------- FOOTER-MIDDLE-LINE
@@ -40,17 +35,18 @@
       display: flex;
       justify-content: space-between;
 
-
-      ul, li {
+      ul,
+      li {
         font-family: 'Open Sans', sans-serif;
-        color: #BDBDBD;
+        color: #bdbdbd;
         font-style: normal;
         font-weight: 600;
         font-size: 14px;
         line-height: 24px;
         letter-spacing: 0.2px;
         margin: 20px 0;
-        min-width: 140px      }
+        min-width: 140px;
+      }
 
       .footer__info-block {
         display: flex;
@@ -58,7 +54,6 @@
         width: 80%;
         justify-content: space-between;
         margin-bottom: 35px;
-
 
         .info-block__company,
         .info-block__features,
@@ -92,38 +87,37 @@
           }
         }
 
-          label {
-            position: relative;
-            height: 60px;
-            width: 326px;
+        label {
+          position: relative;
+          height: 60px;
+          width: 326px;
 
-            input.subscribe-area {
-              background: #F9F9F9;
-              border: 1px solid #E6E6E6;
-              border-radius: 5px 0 0 5px;
-              width: 204px;
-              height: 54px;
-            }
-
-            .subscribe-button {
-              position: absolute;
-              right: 0;
-              background: #D0A144;
-              border: 1px solid #E6E6E6;
-              border-radius: 0 5px 5px 0;
-              width: 117px;
-              height: 58px;
-            }
-
-            .subscribe-button:hover,
-            .subscribe-button:active {
-              transform: none;
-            }
-
+          input.subscribe-area {
+            background: #f9f9f9;
+            border: 1px solid #e6e6e6;
+            border-radius: 5px 0 0 5px;
+            width: 204px;
+            height: 54px;
           }
 
+          .subscribe-button {
+            position: absolute;
+            right: 0;
+            background: #d0a144;
+            border: 1px solid #e6e6e6;
+            border-radius: 0 5px 5px 0;
+            width: 117px;
+            height: 58px;
+          }
+
+          .subscribe-button:hover,
+          .subscribe-button:active {
+            transform: none;
+          }
+        }
+
         .footer__lorem-text {
-          color: #BDBDBD;
+          color: #bdbdbd;
           font-family: 'Montserrat', sans-serif;
           font-style: normal;
           font-weight: 400;
@@ -131,10 +125,9 @@
           line-height: 28px;
           letter-spacing: 0.2px;
         }
-        }
       }
     }
-
+  }
 
   // ---------- FOOTER-BOTTOM-LINE
   &__bottom-line {
@@ -169,8 +162,9 @@
     flex-flow: row wrap;
     justify-content: space-evenly;
 
-    ul, li {
-      min-width: 100px ;
+    ul,
+    li {
+      min-width: 100px;
     }
   }
 }
@@ -216,6 +210,5 @@
   .footer__middle-line .content .footer__info-block li {
     min-width: 100px;
     text-align: center;
-
   }
 }

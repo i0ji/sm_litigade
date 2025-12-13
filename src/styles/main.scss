@@ -1,25 +1,25 @@
 // ---------- SCSS IMPORTS ----------
-@import 'reset';
-@import 'font';
-@import 'colors';
-@import 'header';
-@import 'advice';
-@import 'about';
-@import 'feedback';
-@import 'attorneys';
-@import 'appointment';
-@import 'request';
-@import 'footer';
+@use 'reset';
+@use 'font';
+@use 'colors' as *;
+@use 'header';
+@use 'advice';
+@use 'about';
+@use 'feedback';
+@use 'attorneys';
+@use 'appointment';
+@use 'request';
+@use 'footer';
 
 // ---------- COMMON-SETTINGS ----------
-section, .content
-{
+section,
+.content {
   max-width: 1440px;
   margin: 80px auto 40px auto;
 }
 
 // ---------- SECTION/CONTENT-MEDIA
-@media (min-width: 575.98px){
+@media (min-width: 575.98px) {
   section {
     max-width: 540px;
     margin-left: auto;
@@ -27,7 +27,7 @@ section, .content
     padding: 0;
   }
 }
-@media (min-width: 767.98px){
+@media (min-width: 767.98px) {
   section {
     max-width: 720px;
   }
@@ -37,7 +37,7 @@ section, .content
     max-width: 960px;
   }
 }
-@media (min-width: 1199.98px){
+@media (min-width: 1199.98px) {
   section {
     max-width: 1440px;
   }
@@ -62,7 +62,6 @@ a:visited {
   color: inherit;
   text-decoration: none;
 }
-
 
 // ---------- COMMON-TITLE-TEXT-SETTINGS ----------
 .common-title-l {
@@ -121,11 +120,10 @@ a:visited {
   color: $brand-dark-blue;
 }
 
-
 // ---------- BUTTON-SETTINGS ----------
 button {
   cursor: pointer;
-  transition: all .5s;
+  transition: all 0.5s;
   border: none;
   background-color: transparent;
   font-family: 'Open Sans', sans-serif;
